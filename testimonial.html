@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zenith Holidays | Best Holiday Packages and Travel Deals</title>
     <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -21,7 +21,7 @@
 
 </head>
 
-<body class="bg-gray-100">
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -33,7 +33,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class=" navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.zenithholidays.com/flights">Flights</a>
@@ -72,7 +72,6 @@
             </div>
         </div>
     </nav>
-
     <script>
         const menuBtn = document.getElementById("mobile-menu-button");
         const mobileMenu = document.getElementById("mobile-menu");
@@ -81,138 +80,256 @@
             mobileMenu.classList.toggle("hidden");
         });
     </script>
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="relative py-20 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                What Our <span class="text-cyan-600">Clients Say</span>
+
+
+    <section id="testimonials-text" class="py-24 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                What Our <span class="text-cyan-600">Travellers Say</span>
             </h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-                At Zenith, we don’t just plan business travel & events — we craft <span
-                    class="font-semibold text-cyan-600">memorable experiences</span>.
-                Here’s what our partners and clients have to say about working with us.
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                Real words from happy travellers who explored the world with
+                <span class="font-semibold text-cyan-600">Zenith Holidays</span>.
             </p>
 
-            <!-- Testimonials Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- Testimonial Card -->
-                <div
-                    class="group relative bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg p-8 text-left hover:shadow-2xl hover:scale-105 transition transform duration-300">
-                    <div class="flex items-center mb-4">
-                        <img src="assets/img/client1.jpg" alt="Client 1"
-                            class="w-14 h-14 rounded-full object-cover shadow-md mr-3">
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Ananya Sharma</h4>
-                            <p class="text-sm text-gray-500">HR Manager, Infosys</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed italic">
-                        “Zenith organized our leadership retreat flawlessly. The attention to detail and personalized
-                        touch
-                        made the entire experience unforgettable for our team.”
-                    </p>
-                    <div class="flex mt-4 text-yellow-400">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-                <!-- Testimonial Card -->
-                <div
-                    class="group relative bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg p-8 text-left hover:shadow-2xl hover:scale-105 transition transform duration-300">
-                    <div class="flex items-center mb-4">
-                        <img src="assets/img/client2.jpg" alt="Client 2"
-                            class="w-14 h-14 rounded-full object-cover shadow-md mr-3">
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Rohit Verma</h4>
-                            <p class="text-sm text-gray-500">CEO, TechWave</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed italic">
-                        “Their conference planning exceeded our expectations. Everything was seamless — from logistics
-                        to
-                        hospitality. Highly recommend Zenith for MICE travel.”
-                    </p>
-                    <div class="flex mt-4 text-yellow-400">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                    </div>
-                </div>
-
-                <!-- Testimonial Card -->
-                <div
-                    class="group relative bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg p-8 text-left hover:shadow-2xl hover:scale-105 transition transform duration-300">
-                    <div class="flex items-center mb-4">
-                        <img src="assets/img/client3.jpg" alt="Client 3"
-                            class="w-14 h-14 rounded-full object-cover shadow-md mr-3">
-                        <div>
-                            <h4 class="font-semibold text-gray-800">Meera Kapoor</h4>
-                            <p class="text-sm text-gray-500">Marketing Director, HDFC Bank</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 leading-relaxed italic">
-                        “The team delivered a spectacular product launch event. The creativity and execution were
-                        world-class.
-                        Zenith is now our go-to event partner.”
-                    </p>
-                    <div class="flex mt-4 text-yellow-400">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Testimonials Section -->
-    <section class="py-12 bg-cyan-50">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">What Our Clients Say</h2>
-
-            <div class="swiper mySwiper">
+            <!-- Swiper -->
+            <div class="swiper mySwiperText">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide bg-white p-6 rounded-xl shadow">
-                        <img src="assets/img/client1.jpg" alt="Ananya" class="w-16 h-16 rounded-full mx-auto mb-4">
-                        <h4 class="font-semibold mb-1">Ananya Sharma</h4>
-                        <p class="text-gray-500 mb-2">HR Manager, Infosys</p>
-                        <p class="text-gray-600 italic">“Zenith organized our leadership retreat flawlessly.”</p>
-                    </div>
-
-                    <div class="swiper-slide bg-white p-6 rounded-xl shadow">
-                        <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow mb-4">
-                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                                title="Rohit Video Testimonial" frameborder="0" allowfullscreen></iframe>
+                    <!-- Testimonial Card 1 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/img/profile.png" alt="Brig Lamba"
+                                    class="w-12 h-12 rounded-full mr-4 shadow">
+                                <div class="text-left">
+                                    <h4 class="font-semibold text-gray-900">Brig Lamba & Group</h4>
+                                    <p class="text-sm text-gray-500">Bali, Indonesia 🌏</p>
+                                    <div class="flex mt-1">
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 italic">
+                                “My sincere thanks to all members of this group for their cooperation in making our trip
+                                to Bali so enjoyable & memorable. Special thanks to Ms Kusum for detailed planning &
+                                Zenith Holidays’ efforts.”
+                            </p>
                         </div>
-                        <h4 class="font-semibold">Rohit Verma</h4>
-                        <p class="text-gray-500">CEO, TechWave</p>
                     </div>
 
-                    <div class="swiper-slide bg-white p-6 rounded-xl shadow">
-                        <img src="assets/img/client3.jpg" alt="Meera" class="w-16 h-16 rounded-full mx-auto mb-4">
-                        <h4 class="font-semibold mb-1">Meera Kapoor</h4>
-                        <p class="text-gray-500 mb-2">Marketing Director, HDFC Bank</p>
-                        <p class="text-gray-600 italic">“The product launch event was executed flawlessly.”</p>
+                    <!-- Testimonial Card 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/img/teamwork.png" alt="Shankar"
+                                    class="w-12 h-12 rounded-full mr-4 shadow">
+                                <div class="text-left">
+                                    <h4 class="font-semibold text-gray-900">Shankar & Group</h4>
+                                    <p class="text-sm text-gray-500">Bali, Indonesia 🌏</p>
+                                    <div class="flex mt-1">
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 italic">
+                                “Brig Lamba, Ms Kusum & all friends, Shankar joins me in thanking you all for including
+                                us in the trip. It was so smoothly planned that all of us had a Super 7 Days
+                                Excellence!”
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/img/profile.png" alt="Major R.S. Gujral"
+                                    class="w-12 h-12 rounded-full mr-4 shadow">
+                                <div class="text-left">
+                                    <h4 class="font-semibold text-gray-900">Major R.S. Gujral</h4>
+                                    <p class="text-sm text-gray-500">Bali, Indonesia 🌏</p>
+                                    <div class="flex mt-1">
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 italic">
+                                “Dear Kusum, I take this opportunity to thank Zenith Holidays for organizing this
+                                wonderful trip to Bali, Indonesia. Your rates were highly competitive and services par
+                                excellence.”
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Card 4 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/img/profile.png" alt="Biswajit Santara"
+                                    class="w-12 h-12 rounded-full mr-4 shadow">
+                                <div class="text-left">
+                                    <h4 class="font-semibold text-gray-900">Biswajit Santara</h4>
+                                    <p class="text-sm text-gray-500">Vietnam 🌏</p>
+                                    <div class="flex mt-1">
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-yellow-400">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-700 italic">
+                                “Dear Team Zenith Holidays, the trip was absolutely wonderful, and I’ve returned with so
+                                many happy memories. I truly appreciate your excellent work — it was a pleasure working
+                                with you.”
+                            </p>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="swiper-pagination mt-6"></div>
-                <div class="swiper-button-next text-cyan-400"></div>
-                <div class="swiper-button-prev text-cyan-400"></div>
+                <!-- Swiper Controls -->
+                <div class="swiper-pagination mt-8"></div>
+                <div class="swiper-button-next text-cyan-500"></div>
+                <div class="swiper-button-prev text-cyan-500"></div>
             </div>
         </div>
     </section>
+
+    <!-- ================= Modern Video Testimonials ================= -->
+    <section id="testimonials-video" class="py-24 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                Watch Our <span class="text-cyan-600">Traveller Experiences</span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                See the real moments captured by our happy travellers.
+            </p>
+
+            <!-- Video Swiper -->
+            <div class="swiper mySwiperVideo">
+                <div class="swiper-wrapper">
+
+                    <!-- Video Slide 1 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <video autoplay muted loop playsinline class="w-full h-64 object-cover">
+                                <source src="assets/img/testi-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="p-4 text-left">
+                                <h4 class="font-semibold text-gray-900">Traveller Experience</h4>
+                                <p class="text-sm text-gray-500">Zenith Holidays 🌎</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Slide 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <video autoplay muted loop playsinline class="w-full h-64 object-cover">
+                                <source src="assets/img/testi-2.mp4" type="video/mp4">
+                            </video>
+                            <div class="p-4 text-left">
+                                <h4 class="font-semibold text-gray-900">Traveller Experience</h4>
+                                <p class="text-sm text-gray-500">Zenith Holidays 🌎</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Slide 3 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <video autoplay muted loop playsinline class="w-full h-64 object-cover">
+                                <source src="assets/img/testi-3.mp4" type="video/mp4">
+                            </video>
+                            <div class="p-4 text-left">
+                                <h4 class="font-semibold text-gray-900">Traveller Experience</h4>
+                                <p class="text-sm text-gray-500">Zenith Holidays 🌎</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div
+                            class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <video autoplay muted loop playsinline class="w-full h-64 object-cover">
+                                <source src="assets/img/testi-4.mp4" type="video/mp4">
+                            </video>
+                            <div class="p-4 text-left">
+                                <h4 class="font-semibold text-gray-900">Traveller Experience</h4>
+                                <p class="text-sm text-gray-500">Zenith Holidays 🌎</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Swiper Controls -->
+                <div class="swiper-pagination mt-8"></div>
+                <div class="swiper-button-next text-cyan-500"></div>
+                <div class="swiper-button-prev text-cyan-500"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SwiperJS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Text Swiper
+        new Swiper(".mySwiperText", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoHeight: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            autoplay: { delay: 4500, disableOnInteraction: false },
+            breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+        });
+
+        // Video Swiper
+        const videoSwiper = new Swiper(".mySwiperVideo", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoHeight: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } },
+        });
+
+        // Pause inactive videos
+        videoSwiper.on('slideChange', function () {
+            document.querySelectorAll('.mySwiperVideo video').forEach((vid, idx) => {
+                if (idx === videoSwiper.realIndex) vid.play();
+                else vid.pause();
+            });
+        });
+    </script>
+
+
+
 
     <!-- Modern Footer -->
     <footer class="footer-gradient text-white relative overflow-hidden">
@@ -595,7 +712,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-4 text-center text-xs text-gray-500">
+                <div class="   mt-1 text-center text-xs text-gray-500">
                     © 1997 - 2025 Zenith Holidays. All rights reserved.
                 </div>
             </div>

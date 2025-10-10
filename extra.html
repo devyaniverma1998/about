@@ -18,11 +18,45 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <style>
+        @media (max-width: 991px) {
+            #navbarNavDropdown {
+                display: none;
+                /* Hidden by default */
+            }
 
+            #navbarNavDropdown.show {
+                display: block;
+                /* Show when toggle is clicked */
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+                background-color: #f8f9fa;
+
+            }
+
+            .nav-item {
+                margin-bottom: 0.5rem;
+            }
+
+            .nav-link {
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                color: black !important;
+            }
+        }
+
+        .collapse {
+            visibility: visible !important;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/zenith_logo1.png" alt="Zenith Logo" style="height: 60px;">
@@ -57,17 +91,7 @@
                         <a class="nav-link" href="https://insurance.zenithholidays.com/">Insurance</a>
                     </li>
 
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Senior Citizen</a></li>
-                            <li><a class="dropdown-item" href="#"> Vouchers</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -81,32 +105,28 @@
         });
     </script>
 
-
-    <section id="testimonials-text" class="py-24 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+    <section id="testimonials-text" class="py-12 sm:py-24 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-4xl sm:text-xl md:text-3xl font-extrabold text-gray-900 mb-2 sm:mb-4 lowercase">
                 What Our <span class="text-cyan-600">Travellers Say</span>
             </h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+            <p class="text-sm sm:text-lg text-gray-600 max-w-2xl sm:max-w-3xl mx-auto mb-4 sm:mb-12">
                 Real words from happy travellers who explored the world with
                 <span class="font-semibold text-cyan-600">Zenith Holidays</span>.
             </p>
-
-            <!-- Swiper -->
             <div class="swiper mySwiperText">
                 <div class="swiper-wrapper">
-
                     <!-- Testimonial Card 1 -->
                     <div class="swiper-slide">
                         <div
-                            class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                            <div class="flex items-center mb-4">
+                            class="bg-white px-2 sm:px-4 py-3 sm:py-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center mb-1 sm:mb-2">
                                 <img src="assets/img/profile.png" alt="Brig Lamba"
-                                    class="w-12 h-12 rounded-full mr-4 shadow">
+                                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full mr-2 sm:mr-4 shadow">
                                 <div class="text-left">
-                                    <h4 class="font-semibold text-gray-900">Brig Lamba & Group</h4>
-                                    <p class="text-sm text-gray-500">Bali, Indonesia 🌏</p>
-                                    <div class="flex mt-1">
+                                    <h4 class="text-sm sm:text-base font-semibold text-gray-900">Brig Lamba & Group</h4>
+                                    <p class="text-xs sm:text-sm text-gray-500">Bali, Indonesia 🌏</p>
+                                    <div class="flex mt-0.5 sm:mt-1">
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
@@ -115,79 +135,91 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">
-                                “My sincere thanks to all members of this group for their cooperation in making our trip
-                                to Bali so enjoyable & memorable. Special thanks to Ms Kusum for detailed planning &
-                                Zenith Holidays’ efforts.”
-                            </p>
+                            <div class="testimonial-content">
+                                <p class="text-gray-700 italic testimonial-text text-xs sm:text-sm">
+                                    “My sincere thanks to all members of this group for their cooperation in making our
+                                    trip to Bali so enjoyable & memorable. Special thanks to Ms Kusum for detailed
+                                    planning & Zenith Holidays’ efforts.”
+                                </p>
+                                <a href="#"
+                                    class="see-more text-cyan-600 text-xs sm:text-sm font-medium mt-1 sm:mt-2 inline-block">See
+                                    More</a>
+                            </div>
                         </div>
                     </div>
-
                     <!-- Testimonial Card 2 -->
                     <div class="swiper-slide">
                         <div
-                            class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                            <div class="flex items-center mb-4">
+                            class="bg-white px-2 sm:px-4 py-3 sm:py-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center mb-1 sm:mb-2">
                                 <img src="assets/img/teamwork.png" alt="Shankar"
-                                    class="w-12 h-12 rounded-full mr-4 shadow">
+                                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full mr-2 sm:mr-4 shadow">
                                 <div class="text-left">
-                                    <h4 class="font-semibold text-gray-900">Shankar & Group</h4>
-                                    <p class="text-sm text-gray-500">Bali, Indonesia 🌏</p>
-                                    <div class="flex mt-1">
+                                    <h4 class="text-sm sm:text-base font-semibold text-gray-900">Shankar & Group</h4>
+                                    <p class="text-xs sm:text-sm text-gray-500">Bali, Indonesia 🌏</p>
+                                    <div class="flex mt-0.5 sm:mt-1">
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
-                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-gray-200">★</span>
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">
-                                “Brig Lamba, Ms Kusum & all friends, Shankar joins me in thanking you all for including
-                                us in the trip. It was so smoothly planned that all of us had a Super 7 Days
-                                Excellence!”
-                            </p>
+                            <div class="testimonial-content">
+                                <p class="text-gray-700 italic testimonial-text text-xs sm:text-sm">
+                                    “Brig Lamba, Ms Kusum & all friends, Shankar joins me in thanking you all for
+                                    including us in the trip. It was so smoothly planned that all of us had a Super 7
+                                    Days Excellence!”
+                                </p>
+                                <a href="#"
+                                    class="see-more text-cyan-600 text-xs sm:text-sm font-medium mt-1 sm:mt-2 inline-block">See
+                                    More</a>
+                            </div>
                         </div>
                     </div>
-
                     <!-- Testimonial Card 3 -->
                     <div class="swiper-slide">
                         <div
-                            class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                            <div class="flex items-center mb-4">
+                            class="bg-white px-2 sm:px-4 py-3 sm:py-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center mb-1 sm:mb-2">
                                 <img src="assets/img/profile.png" alt="Major R.S. Gujral"
-                                    class="w-12 h-12 rounded-full mr-4 shadow">
+                                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full mr-2 sm:mr-4 shadow">
                                 <div class="text-left">
-                                    <h4 class="font-semibold text-gray-900">Major R.S. Gujral</h4>
-                                    <p class="text-sm text-gray-500">Bali, Indonesia 🌏</p>
-                                    <div class="flex mt-1">
+                                    <h4 class="text-sm sm:text-base font-semibold text-gray-900">Major R.S. Gujral</h4>
+                                    <p class="text-xs sm:text-sm text-gray-500">Bali, Indonesia 🌏</p>
+                                    <div class="flex mt-0.5 sm:mt-1">
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
-                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-gray-200">★</span>
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">
-                                “Dear Kusum, I take this opportunity to thank Zenith Holidays for organizing this
-                                wonderful trip to Bali, Indonesia. Your rates were highly competitive and services par
-                                excellence.”
-                            </p>
+                            <div class="testimonial-content">
+                                <p class="text-gray-700 italic testimonial-text text-xs sm:text-sm">
+                                    “Dear Kusum, I take this opportunity to thank Zenith Holidays for organizing this
+                                    wonderful trip to Bali, Indonesia. Your rates were highly competitive and services
+                                    par excellence.”
+                                </p>
+                                <a href="#"
+                                    class="see-more text-cyan-600 text-xs sm:text-sm font-medium mt-1 sm:mt-2 inline-block">See
+                                    More</a>
+                            </div>
                         </div>
                     </div>
-
                     <!-- Testimonial Card 4 -->
                     <div class="swiper-slide">
                         <div
-                            class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                            <div class="flex items-center mb-4">
+                            class="bg-white px-2 sm:px-4 py-3 sm:py-5 rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="flex items-center mb-1 sm:mb-2">
                                 <img src="assets/img/profile.png" alt="Biswajit Santara"
-                                    class="w-12 h-12 rounded-full mr-4 shadow">
+                                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full mr-2 sm:mr-4 shadow">
                                 <div class="text-left">
-                                    <h4 class="font-semibold text-gray-900">Biswajit Santara</h4>
-                                    <p class="text-sm text-gray-500">Vietnam 🌏</p>
-                                    <div class="flex mt-1">
+                                    <h4 class="text-sm sm:text-base font-semibold text-gray-900">Biswajit Santara</h4>
+                                    <p class="text-xs sm:text-sm text-gray-500">Vietnam 🌏</p>
+                                    <div class="flex mt-0.5 sm:mt-1">
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
@@ -196,150 +228,253 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-gray-700 italic">
-                                “Dear Team Zenith Holidays, the trip was absolutely wonderful, and I’ve returned with so
-                                many happy memories. I truly appreciate your excellent work — it was a pleasure working
-                                with you.”
-                            </p>
+                            <div class="testimonial-content">
+                                <p class="text-gray-700 italic testimonial-text text-xs sm:text-sm">
+                                    “Dear Team Zenith Holidays, the trip was absolutely wonderful, and I’ve returned
+                                    with so many happy memories. I truly appreciate your excellent work — it was a
+                                    pleasure working with you.”
+                                </p>
+                                <a href="#"
+                                    class="see-more text-cyan-600 text-xs sm:text-sm font-medium mt-1 sm:mt-2 inline-block">See
+                                    More</a>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
-                <!-- Swiper Controls -->
-                <div class="swiper-pagination mt-8"></div>
-                <div class="swiper-button-next text-cyan-500"></div>
-                <div class="swiper-button-prev text-cyan-500"></div>
+                <div class="swiper-pagination mt-4 sm:mt-8"></div>
+                <div class="swiper-button-next text-cyan-500 hidden sm:block"></div>
+                <div class="swiper-button-prev text-cyan-500 hidden sm:block"></div>
             </div>
-        </div>
     </section>
-<!-- ================= Modern Video Testimonials ================= -->
-    <section id="testimonials-video" class="py-24 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+
+    <section id="testimonials-video" class="py-12 sm:py-24 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-2 sm:mb-4">
                 Watch Our <span class="text-cyan-600">Traveller Experiences</span>
             </h2>
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+            <p class="text-sm sm:text-lg text-gray-600 max-w-2xl sm:max-w-3xl mx-auto mb-4 sm:mb-12">
                 See the real moments captured by our happy travellers.
             </p>
-
-            <!-- Video Swiper -->
             <div class="swiper mySwiperVideo">
                 <div class="swiper-wrapper">
-
-                    <!-- Instagram Reel Slide 1 -->
-                    <div class="swiper-slide" >
-                        <div class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                            <iframe src="https://www.instagram.com/reel/DPBJnt3ER0e/embed" width="100%"   style="height: 350px;"
-                                frameborder="0" scrolling="no" allowfullscreen></iframe>
-                            
-                        </div>
-                    </div>
-
-                    <!-- Instagram Reel Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                            <iframe src="https://www.instagram.com/reel/DO81b8kEaMM/embed" width="100%"   style="height: 350px;"
-                                frameborder="0" scrolling="no" allowfullscreen></iframe>
-                            
+                        <div
+                            class="relative bg-white rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <iframe src="https://www.instagram.com/reel/DPBJnt3ER0e/embed" width="100%"
+                                style="height: 200px sm:height: 350px;" frameborder="0" scrolling="no"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-
-                    <!-- Instagram Reel Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                            <iframe src="https://www.instagram.com/reel/DMu4NXtPXAY/embed" width="100%"   style="height: 350px;"
-                                frameborder="0" scrolling="no" allowfullscreen></iframe>
-                            
+                        <div
+                            class="relative bg-white rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <iframe src="https://www.instagram.com/reel/DO81b8kEaMM/embed" width="100%"
+                                style="height: 200px sm:height: 350px;" frameborder="0" scrolling="no"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-
-                    <!-- Instagram Reel Slide 5 -->
                     <div class="swiper-slide">
-                        <div class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                            <iframe src="https://www.instagram.com/reel/DMsbDWXvcqQ/embed" width="100%"   style="height: 350px;"
-                                frameborder="0" scrolling="no" allowfullscreen></iframe>
-                            
+                        <div
+                            class="relative bg-white rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <iframe src="https://www.instagram.com/reel/DMu4NXtPXAY/embed" width="100%"
+                                style="height: 200px sm:height: 350px;" frameborder="0" scrolling="no"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-
-                    <!-- Instagram Reel Slide 6 -->
                     <div class="swiper-slide">
-                        <div class="relative bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
-                            <iframe src="https://www.instagram.com/reel/DOV52TVD8_m/embed" width="100%"   style="height: 350px;"
-                                frameborder="0" scrolling="no" allowfullscreen></iframe>
-                            
+                        <div
+                            class="relative bg-white rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <iframe src="https://www.instagram.com/reel/DMsbDWXvcqQ/embed" width="100%"
+                                style="height: 200px sm:height: 350px;" frameborder="0" scrolling="no"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
-
+                    <div class="swiper-slide">
+                        <div
+                            class="relative bg-white rounded-2xl sm:rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+                            <iframe src="https://www.instagram.com/reel/DOV52TVD8_m/embed" width="100%"
+                                style="height: 200px sm:height: 350px;" frameborder="0" scrolling="no"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Swiper Controls -->
-                <div class="swiper-pagination mt-8"></div>
-                <div class="swiper-button-next text-cyan-500"></div>
-                <div class="swiper-button-prev text-cyan-500"></div>
+                <div class="swiper-pagination mt-4 sm:mt-8"></div>
+                <div class="swiper-button-next text-cyan-500 hidden sm:block"></div>
+                <div class="swiper-button-prev text-cyan-500 hidden sm:block"></div>
             </div>
         </div>
     </section>
 
-
-
-    <!-- ================= SwiperJS ================= -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Text Swiper
-        new Swiper(".mySwiperText", {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            loop: true,
-            autoHeight: true,
-            pagination: { el: ".swiper-pagination", clickable: true },
-            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-            autoplay: { delay: 4500, disableOnInteraction: false },
-            breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-        });
-         // Video Swiper
-        const videoSwiper = new Swiper(".mySwiperVideo", {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            loop: true,
-            autoHeight: true,
-            pagination: { el: ".swiper-pagination", clickable: true },
-            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-            autoplay: { delay: 5000, disableOnInteraction: false },
-            breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } },
-        });
+        document.addEventListener('DOMContentLoaded', () => {
+            // Text Swiper with 2 rows
+            new Swiper(".mySwiperText", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                autoHeight: true,
+                pagination: { el: ".swiper-pagination", clickable: true },
+                navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+                autoplay: { delay: 4500, disableOnInteraction: false },
+                grid: {
+                    rows: 2,
+                    fill: 'row'
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 15
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                        grid: { rows: 2 }
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 24,
+                        grid: { rows: 2 }
+                    }
+                }
+            });
 
-        // Pause inactive videos
-        videoSwiper.on('slideChange', function () {
-            document.querySelectorAll('.mySwiperVideo video').forEach((vid, idx) => {
-                if (idx === videoSwiper.realIndex) vid.play();
-                else vid.pause();
+            // Video Swiper
+            new Swiper(".mySwiperVideo", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                autoHeight: true,
+                pagination: { el: ".swiper-pagination", clickable: true },
+                navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+                autoplay: { delay: 5000, disableOnInteraction: false },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 15
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 24
+                    }
+                }
+            });
+
+            // "See More" functionality for testimonials
+            const seeMoreLinks = document.querySelectorAll('.see-more');
+            seeMoreLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const testimonialContent = link.closest('.testimonial-content');
+                    testimonialContent.classList.toggle('expanded');
+                    if (testimonialContent.classList.contains('expanded')) {
+                        link.textContent = 'See Less';
+                    } else {
+                        link.textContent = 'See More';
+                    }
+                });
             });
         });
-
-
     </script>
 
+    <style>
+        /* Truncate testimonial text initially */
+        .testimonial-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        /* Expanded state */
+        .testimonial-content.expanded .testimonial-text {
+            -webkit-line-clamp: unset;
+            overflow: visible;
+        }
+
+        /* Hide "See More" link when expanded */
+        .testimonial-content.expanded .see-more {
+            display: none;
+        }
+
+        /* Mobile responsiveness adjustments */
+        @media (max-width: 640px) {
+
+            .mySwiperText .swiper-slide,
+            .mySwiperVideo .swiper-slide {
+                width: 90% !important;
+                /* Ensure slides fit mobile screen */
+            }
+
+            .mySwiperText .swiper-wrapper,
+            .mySwiperVideo .swiper-wrapper {
+                padding-bottom: 20px;
+                /* Prevent overlap with pagination */
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: none;
+                /* Hide navigation arrows on mobile */
+            }
+
+            #testimonials-text .testimonial-content p,
+            #testimonials-video .testimonial-content p {
+                font-size: 0.75rem;
+                /* Smaller text on mobile */
+            }
+
+            #testimonials-text h4,
+            #testimonials-video h4 {
+                font-size: 0.875rem;
+                /* Smaller heading on mobile */
+            }
+
+            #testimonials-text img,
+            #testimonials-video img {
+                width: 6rem;
+                /* Adjust image size for mobile */
+                height: 6rem;
+            }
+
+            #testimonials-text .see-more,
+            #testimonials-video .see-more {
+                font-size: 0.7rem;
+                /* Smaller "See More" link */
+            }
+
+            #testimonials-text iframe,
+            #testimonials-video iframe {
+                height: 150px;
+                /* Reduced iframe height for mobile */
+            }
+        }
+
+        /* General responsiveness */
+        @media (min-width: 641px) and (max-width: 767px) {
+
+            .mySwiperText .swiper-slide,
+            .mySwiperVideo .swiper-slide {
+                width: 80% !important;
+            }
+        }
+    </style>
 
 
-
-    <!-- Modern Footer -->
     <footer class="footer-gradient text-white relative overflow-hidden">
-        <!-- Floating Background Elements -->
         <div class="absolute inset-0 pointer-events-none">
-            <div class="floating-element absolute top-10 left-10 w-20 h-20 bg-cyan-500/10 rounded-full blur-xl">
-            </div>
-            <div class="floating-element absolute top-20 right-20 w-32 h-32 bg-blue-500/10 rounded-full blur-xl">
-            </div>
+            <div class="floating-element absolute top-10 left-10 w-20 h-20 bg-cyan-500/10 rounded-full blur-xl"></div>
+            <div class="floating-element absolute top-20 right-20 w-32 h-32 bg-blue-500/10 rounded-full blur-xl"></div>
             <div class="floating-element absolute bottom-20 left-1/3 w-24 h-24 bg-purple-500/10 rounded-full blur-xl">
             </div>
         </div>
-
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
             <div class="grid lg:grid-cols-5 gap-8">
-
-                <!-- Mobile-First Tab Navigation -->
                 <div class="lg:col-span-1">
                     <h2 class="text-xl font-bold mb-6 section-title">Quick Links</h2>
                     <div class="grid grid-cols-2 lg:grid-cols-1 gap-2">
@@ -349,7 +484,6 @@
                             <i class="fa-solid fa-gift text-cyan-400 text-sm"></i>
                             <span class="text-sm font-medium">Our Services</span>
                         </button>
-
                         <button
                             class="tab-button bg-slate-700/50 backdrop-blur text-white px-4 py-3 rounded-lg text-left flex items-center gap-3 hover:bg-slate-600/50"
                             data-tab="about">
@@ -376,12 +510,8 @@
                         </button>
                     </div>
                 </div>
-
-                <!-- Tab Content -->
                 <div class="lg:col-span-2">
                     <div class="content-panel rounded-2xl p-6 min-h-[300px]">
-
-                        <!-- Services Tab -->
                         <div id="services" class="tab-content block">
                             <h3 class="text-xl font-bold mb-6 section-title">Our Premium Services</h3>
                             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -392,7 +522,7 @@
                                     </a>
                                 </div>
                                 <div class="grid-item text-center">
-                                    <a href=" https://www.zenithholidays.com/flights " target="_blank">
+                                    <a href="https://www.zenithholidays.com/flights" target="_blank">
                                         <i class="fa-solid fa-plane text-2xl text-cyan-400 mb-2"></i>
                                         <div class="text-sm font-medium">Flights</div>
                                     </a>
@@ -439,17 +569,14 @@
                                         <div class="text-sm font-medium">Train</div>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
-
-                        <!-- About Tab -->
                         <div id="about" class="tab-content hidden">
                             <h3 class="text-xl font-bold mb-6 section-title">About Zenith Holidays</h3>
                             <p class="text-gray-300 mb-6 leading-relaxed">
-                                Zenith Holidays is one of India's leading travel companies, offering a complete
-                                range of travel solutions worldwide. We create unforgettable experiences with
-                                personalized service and attention to detail.
+                                Zenith Holidays is one of India's leading travel companies, offering a complete range of
+                                travel solutions worldwide. We create unforgettable experiences with personalized
+                                service and attention to detail.
                             </p>
                             <div class="grid grid-cols-2 gap-3">
                                 <a href="https://blog.zenithholidays.com/" class="grid-item flex items-center gap-2">
@@ -482,10 +609,7 @@
                                     <span>About Info</span>
                                 </a>
                             </div>
-
                         </div>
-
-                        <!-- Payment Tab -->
                         <div id="payment" class="tab-content hidden">
                             <h3 class="text-xl font-bold mb-6 section-title">Secure Payment Options</h3>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -495,21 +619,18 @@
                                     <div class="font-semibold">Credit & Debit Cards</div>
                                     <div class="text-sm opacity-80">Visa, MasterCard, Amex</div>
                                 </a>
-
                                 <a href="#" target="_blank"
                                     class="grid-item block bg-gradient-to-r from-green-600 to-teal-600 p-2 rounded-xl">
                                     <i class="fa-solid fa-university text-2xl mb-2"></i>
                                     <div class="font-semibold">Net Banking</div>
                                     <div class="text-sm opacity-80">All major banks supported</div>
                                 </a>
-
                                 <a href="https://razorpay.me/@zenithleisureholidays" target="_blank"
                                     class="grid-item block bg-gradient-to-r from-orange-600 to-red-600 p-2 rounded-xl">
                                     <i class="fa-solid fa-mobile-alt text-2xl mb-2"></i>
                                     <div class="font-semibold">UPI & Wallets</div>
                                     <div class="text-sm opacity-80">PhonePe, GPay, Paytm</div>
                                 </a>
-
                                 <a href="#" target="_blank"
                                     class="grid-item block bg-gradient-to-r from-indigo-600 to-blue-600 p-2 rounded-xl">
                                     <i class="fa-solid fa-globe text-2xl mb-2"></i>
@@ -517,10 +638,7 @@
                                     <div class="text-sm opacity-80">Worldwide acceptance</div>
                                 </a>
                             </div>
-
                         </div>
-
-                        <!-- Information Tab -->
                         <div id="info" class="tab-content hidden">
                             <h3 class="text-xl font-bold mb-6 section-title">Travel Information</h3>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -550,12 +668,8 @@
                                 </a>
                             </div>
                         </div>
-
-                        <!-- Locations Tab -->
-
                         <div id="locations" class="tab-content hidden">
                             <h3 class="text-xl font-bold mb-6 section-title">Our Branch Network</h3>
-
                             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 text-sm">
                                 <div class="grid-item"><a
                                         href="https://www.zenithholidays.com/blog/branch/noida/travel-agency.html"
@@ -617,14 +731,10 @@
                                 <div class="grid-item"><a
                                         href="https://www.zenithholidays.com/blog/branch/bengaluru/travel-agency.html"
                                         target="_blank">Bengaluru</a></div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
-
-                <!-- Quick Travel Packages -->
                 <div class="lg:col-span-1">
                     <h3 class="text-xl font-bold mb-6 section-title">Domestic</h3>
                     <div class="space-y-4">
@@ -653,7 +763,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="lg:col-span-1">
                     <h3 class="text-xl font-bold mb-6 section-title">International</h3>
                     <div class="space-y-4">
@@ -682,20 +791,14 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 border-t border-gray-700/50">
-                <!-- Logo, Contact, and Copyright Row -->
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6 ">
-                    <!-- Logo and Tagline -->
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6 py-4">
                     <div class="flex items-center gap-4">
                         <img src="assets/img/zenith_logo.svg" alt="Zenith Holidays Logo"
                             class="h-16 mb-4 filter brightness-0 invert">
-
                     </div>
-
-                    <!-- Contact Info -->
-                    <div class="flex items-center gap-6 text-sm text-gray-400">
+                    <div class="flex flex-col items-center gap-3 text-sm text-gray-400 md:flex-row md:gap-6">
                         <div class="flex items-center gap-2">
                             <i class="fas fa-phone text-cyan-400"></i>
                             <span>+91 1800 11 2277</span>
@@ -706,15 +809,11 @@
                         </div>
                     </div>
                 </div>
-
-
-                <!-- Copyright (Centered) -->
                 <div class="text-center text-xs text-gray-500 mb-4">
                     © 1997 - 2025 Zenith Holidays. All rights reserved.
                 </div>
-                <!-- Banner with Checkmark Items -->
-                <div class=" bg-gray-800/50 backdrop-blur-sm rounded-lg p-3 flex justify-center">
-                    <div class="banner-content flex flex-row flex-wrap justify-center items-center gap-4 text-sm">
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 flex justify-center">
+                    <div class="banner-content flex flex-wrap justify-center items-center gap-4 text-sm">
                         <div class="flex items-center gap-2 whitespace-nowrap">
                             <span class="text-purple-400">✔</span> $1 Billion Travel Company
                         </div>
@@ -735,72 +834,59 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </footer>
-
-    <script>
-        // Tab functionality
-        const tabButtons = document.querySelectorAll('.tab-button');
-        const tabContents = document.querySelectorAll('.tab-content');
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class from all buttons
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                // Hide all tab contents
-                tabContents.forEach(content => content.classList.add('hidden'));
-
-                // Add active class to clicked button
-                button.classList.add('active');
-                // Show corresponding tab content
-                const targetTab = document.getElementById(button.dataset.tab);
-                if (targetTab) {
-                    targetTab.classList.remove('hidden');
-                }
-            });
-        });
-
-        // Add smooth scrolling for better UX
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add loading animation on tab switch
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const content = document.getElementById(button.dataset.tab);
-                if (content) {
-                    content.style.opacity = '0';
-                    content.style.transform = 'translateY(10px)';
-                    setTimeout(() => {
-                        content.style.transition = 'all 0.3s ease';
-                        content.style.opacity = '1';
-                        content.style.transform = 'translateY(0)';
-                    }, 50);
-                }
-            });
-        });
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Tab functionality
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.add('hidden'));
+                    button.classList.add('active');
+                    const targetTab = document.getElementById(button.dataset.tab);
+                    if (targetTab) targetTab.classList.remove('hidden');
+                });
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+
+            // Loading animation on tab switch
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = document.getElementById(button.dataset.tab);
+                    if (content) {
+                        content.style.opacity = '0';
+                        content.style.transform = 'translateY(10px)';
+                        setTimeout(() => {
+                            content.style.transition = 'all 0.3s ease';
+                            content.style.opacity = '1';
+                            content.style.transform = 'translateY(0)';
+                        }, 50);
+                    }
+                });
+            });
+
+
+        });
+    </script>
 
 </body>
-
-
 
 </html>

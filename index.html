@@ -18,11 +18,45 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <style>
+        @media (max-width: 991px) {
+            #navbarNavDropdown {
+                display: none;
+                /* Hidden by default */
+            }
 
+            #navbarNavDropdown.show {
+                display: block;
+                /* Show when toggle is clicked */
+            }
+
+            .navbar-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem;
+                background-color: #f8f9fa;
+
+            }
+
+            .nav-item {
+                margin-bottom: 0.5rem;
+            }
+
+            .nav-link {
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                color: black !important;
+            }
+        }
+
+        .collapse {
+            visibility: visible !important;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/zenith_logo1.png" alt="Zenith Logo" style="height: 60px;">
@@ -57,17 +91,7 @@
                         <a class="nav-link" href="https://insurance.zenithholidays.com/">Insurance</a>
                     </li>
 
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Senior Citizen</a></li>
-                            <li><a class="dropdown-item" href="#"> Vouchers</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -84,9 +108,9 @@
 
     <section id="testimonials-text" class="py-24 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-                What Our <span class="text-cyan-600">Travellers Say</span>
-            </h2>
+  <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 sm:mb-4">
+    What Our <span class="text-cyan-600">Travellers</span> Say
+</h2>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
                 Real words from happy travellers who explored the world with
                 <span class="font-semibold text-cyan-600">Zenith Holidays</span>.
@@ -138,7 +162,7 @@
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
-                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-gray-200">★</span>
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +189,7 @@
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
                                         <span class="text-yellow-400">★</span>
-                                        <span class="text-yellow-400">★</span>
+                                        <span class="text-gray-200">★</span>
                                     </div>
                                 </div>
                             </div>
@@ -211,12 +235,13 @@
                 <div class="swiper-button-next text-cyan-500"></div>
                 <div class="swiper-button-prev text-cyan-500"></div>
             </div>
+
         </div>
     </section>
     <!-- ================= Modern Video Testimonials ================= -->
     <section id="testimonials-video" class="py-24 bg-gradient-to-br from-white via-cyan-50 to-cyan-100">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 sm:mb-4">
                 Watch Our <span class="text-cyan-600">Traveller Experiences</span>
             </h2>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
